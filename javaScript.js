@@ -261,7 +261,7 @@ function toggleFavorite(movieId) {
 
 const searchInput = document.querySelector('.searchInput');
 
-searchInput.addEventListener('input', function() {
+searchInput.addEventListener('keyDown', function() {
     const inputValue = searchInput.value.trim();
     if (inputValue.length >= 2) {
         fetchMovies(inputValue)
